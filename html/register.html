@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>register form</title>
+    </head>
+    <body>
+        <center>
+            <h2>Customer registration</h2>
+            <br>
+            <br>
+            <form action="onclick">
+                <label>User Name:</label>
+                <input type="text" maxlength="15" pattern="[A-Za-z]+" required autofocus/>
+                <br>
+                <br>
+                <label>Password:</label>
+                <input type="text" required pattern="^/\d\w\d/$" minlength="8" maxlength="12"/>
+                <br>
+                <br>
+                <label>Email:</label>
+                <input type="e-mail" required/>
+                <br>
+                <br>
+                <label>Gender:</label>
+                <input type="radio" name="r" />Female
+                <input type="radio" name="r"/> Male
+                <input type="radio" name="r" />others
+                <br>
+                <br>
+                <label>Age(Yrs):</label>
+                <input type="number" required minlength="12" maxlength="60"/>
+                <br>
+                <br>
+                <label>Address:</label>
+                <textarea rows="10" cols="30" ></textarea>
+                <br>
+                <br>
+                company website: <input type="url" name="url"/>
+                <br>
+                <br>
+                <label>choose country:</label>
+                <select>
+                    <option value="India" id="ind">India</option>
+                    <option value="USA" id="usa">USA</option>        
+                    <option value="Japan" id="jap">Japan</option>    
+                    <option value="Germany" id="ger">Germany</option>    
+                </select>
+                <br>
+                <br>
+                <label>Date of Journey:</label>
+                <input type="date" />
+                <br>
+                <br>
+                <input type="submit"/>
+                <input type="button" value="Reset"/> 
+            </form>
+        </center>
+    </body>
+</html>
